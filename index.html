@@ -9,14 +9,11 @@
   <body>
     <div class="grid-container">
       <div class="img-container">
-
-        <img src="img/logo_catface.svg" alt="" class="logo">
-
         <img src="img/amber-kipp-75715CVEJhI-unsplash.jpg" alt="ginger cat" />
       </div>
       <div class="form-container">
         <header class="form-header">
-          <h1>Happy Cats!</h1>
+          <h1>Happy Cats!<span class="logo-header"><img src="img/MdiCat.svg" alt="" class="logo-header"></span></h1>
           <p>
             This is not a real online service! You know you need something like
             this in your life to help you realise your deepest dreams. Sign up
@@ -44,7 +41,7 @@
   
           <div class="form-row">
             <label for="user-tel">PHONE NUMBER</label>
-            <input type="tel" id="user-tel" name="user-tel" />
+            <input type="tel" id="user-tel" name="user-tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
           </div>
   
           <div class="form-row">
@@ -55,7 +52,11 @@
           <div class="form-row">
             <label for="user-pw-confirm">CONFIRM PASSWORD</label>
             <input type="email" id="user-pw-confirm" name="user-pw-confirm" />
-      </div>
+          </div>
+          
+          <button type="submit">Sign Up</button>
+          <p class="login-link">Already have an account? <a href="#">Log In</a></p>
+      
     </div>
   </body>
 </html>
